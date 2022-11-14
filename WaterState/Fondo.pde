@@ -14,6 +14,7 @@ class Fondo
     enemigo = new ArrayList<Sprite>();
     //------------------
     bgFondo = loadImage("BG.png");
+    bgFondo = loadImage("BG1.png");
     crearPlataforma(name);
   }
   void mostrar()
@@ -153,6 +154,7 @@ class Fondo
   int obtenerNum(String txt)
   {
     int num = 0;
+    num = Integer.valueOf(txt);
     num = Integer.valueOf(txt);
     return num;
   }

@@ -1,15 +1,19 @@
 class Nivel
 {
   Fondo lv1;
+  Fondo lv2;
   int mapa;
   Nivel()
   {
     mapa = 0;
     lv1 = new Fondo("mapa0.csv","Tileset32.png",32);
+    lv2 = new Fondo("mapa0.csv","Tileset32.png",32);
   }
   void mostrar()
   {
     lv1.mostrar();
+    lv2.mostrar();
+    
   }
   void cambiarNivel()
   {
@@ -23,5 +27,6 @@ class Nivel
     player.center.x = 65;
     view_x = 0;
     lv1 = new Fondo("mapa"+mapa+".csv","Tileset32.png",32);
+    lv2 = new Fondo("mapa"+mapa+".csv","Tileset32.png",32);
   }
 }
